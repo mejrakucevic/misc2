@@ -1,3 +1,4 @@
+// 32. Active Strict Mode
 // 'use strict'; // helps us see the bugs in our code, 1. forbits us to write certain code 2. shows us errors
 
 // let hasDriversLicense = false;
@@ -6,7 +7,7 @@
 // if (passTest) hasDriverLicense = true; // ovde smo namerno napisali Driver umesto Drivers, u obicnom JS u konzoli se nista ne bi pokazalo dok u strict modu nam tacno kaze da je problem u hasDriverLicense
 // if (hasDriversLicense) console.log("I can drive.")
 
-// 33. 
+// 33. Functions
 // function logger() {
 //     console.log("My name is Mejra");
 // }
@@ -29,7 +30,7 @@
 
 
 
-// 35.
+// 35. Arrow functions
 
 const calcAge = function (birthYear) {
     return 2022 - birthYear;
@@ -49,4 +50,21 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 }
 
 console.log(yearsUntilRetirement(2004, "Mejra"));
+
+// 36 Functions calling other functions
+
+
+function fruitCutter(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = fruitCutter(apples);
+    const orangePieces = fruitCutter(oranges);
+    console.log(apples, oranges);
+    const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} oranges pieces.`;
+    return juice
+} 
+
+console.log(fruitProcessor(2, 3));
 

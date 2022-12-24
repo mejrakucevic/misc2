@@ -7,23 +7,46 @@
 // if (hasDriversLicense) console.log("I can drive.")
 
 // 33. 
-function logger() {
-    console.log("My name is Mejra");
+// function logger() {
+//     console.log("My name is Mejra");
+// }
+
+// // calling / running/ invoking function
+// logger();
+
+// function fruitProcessor(apples, oranges) {
+//     console.log(apples, oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice
+// } 
+
+// const orangeJuice = fruitProcessor(4, 12)
+// const appleJuice = fruitProcessor(10, 0);
+// const appleOrangeJuice = fruitProcessor(6, 6);
+
+// console.log(appleJuice);
+
+
+
+
+// 35.
+
+const calcAge = function (birthYear) {
+    return 2022 - birthYear;
 }
 
-// calling / running/ invoking function
-logger();
+//Arrow function equivalent
+const calcAge2 =  birthYear => 2022 - birthYear; // good for one liner functions
 
-function fruitProcessor(apples, oranges) {
-    console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-    return juice
-} 
+const age = calcAge2(2000)
+console.log(age);
 
-const orangeJuice = fruitProcessor(4, 12)
-const appleJuice = fruitProcessor(10, 0);
-const appleOrangeJuice = fruitProcessor(6, 6);
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2022 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`
+}
 
-console.log(appleJuice);
-
+console.log(yearsUntilRetirement(2004, "Mejra"));
 

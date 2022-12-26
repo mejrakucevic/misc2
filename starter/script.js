@@ -32,39 +32,59 @@
 
 // 35. Arrow functions
 
+// const calcAge = function (birthYear) {
+//     return 2022 - birthYear;
+// }
+
+// //Arrow function equivalent
+// const calcAge2 =  birthYear => 2022 - birthYear; // good for one liner functions
+
+// const age = calcAge2(2000)
+// console.log(age);
+
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2022 - birthYear;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years`
+// }
+
+// console.log(yearsUntilRetirement(2004, "Mejra"));
+
+// // 36 Functions calling other functions
+
+
+// function fruitCutter(fruit) {
+//     return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = fruitCutter(apples);
+//     const orangePieces = fruitCutter(oranges);
+//     console.log(apples, oranges);
+//     const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} oranges pieces.`;
+//     return juice
+// } 
+
+// console.log(fruitProcessor(2, 3));
+
 const calcAge = function (birthYear) {
     return 2022 - birthYear;
 }
 
-//Arrow function equivalent
-const calcAge2 =  birthYear => 2022 - birthYear; // good for one liner functions
-
-const age = calcAge2(2000)
-console.log(age);
-
 const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2022 - birthYear;
+
+    const age = calcAge(birthYear)
     const retirement = 65 - age;
-    // return retirement;
-    return `${firstName} retires in ${retirement} years`
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired.`);
+        return -1;
+    }
+
 }
 
 console.log(yearsUntilRetirement(2004, "Mejra"));
-
-// 36 Functions calling other functions
-
-
-function fruitCutter(fruit) {
-    return fruit * 4;
-}
-
-function fruitProcessor(apples, oranges) {
-    const applePieces = fruitCutter(apples);
-    const orangePieces = fruitCutter(oranges);
-    console.log(apples, oranges);
-    const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} oranges pieces.`;
-    return juice
-} 
-
-console.log(fruitProcessor(2, 3));
-

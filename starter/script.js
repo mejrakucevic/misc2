@@ -68,23 +68,56 @@
 
 // console.log(fruitProcessor(2, 3));
 
-const calcAge = function (birthYear) {
+// const calcAge = function (birthYear) {
+//     return 2022 - birthYear;
+// }
+
+// const yearsUntilRetirement = (birthYear, firstName) => {
+
+//     const age = calcAge(birthYear)
+//     const retirement = 65 - age;
+
+//     if (retirement > 0) {
+//         console.log(`${firstName} retires in ${retirement} years`);
+//         return retirement;
+//     } else {
+//         console.log(`${firstName} has already retired.`);
+//         return -1;
+//     }
+
+// }
+
+// console.log(yearsUntilRetirement(2004, "Mejra"));
+
+// 39. arrays
+
+// const song1 = "Man's World";
+// const song2 = 'Venus Fly Trap';
+// const song3 = 'Power & Control';
+
+const songs = ["Man's World", "Venus Fly Trap", "Power & Control"]
+
+console.log(songs)
+
+// const years = new Array(1989, 1999, 2000, 2004)
+
+console.log(songs[0]);
+console.log(songs.length);
+console.log(songs[songs.length - 1])
+
+songs[2] = "Lies" // replace the last element with a new one
+console.log(songs)
+
+const firstName = "taylor";
+const taylor = [firstName, 'Swift', 2022 - 1989, 'singer', songs];
+console.log(taylor)
+
+// Exercise
+const calcAge = function(birthYear) {
     return 2022 - birthYear;
 }
 
-const yearsUntilRetirement = (birthYear, firstName) => {
+const years = [1991, 1989, 2000, 2004]
 
-    const age = calcAge(birthYear)
-    const retirement = 65 - age;
-
-    if (retirement > 0) {
-        console.log(`${firstName} retires in ${retirement} years`);
-        return retirement;
-    } else {
-        console.log(`${firstName} has already retired.`);
-        return -1;
-    }
-
-}
-
-console.log(yearsUntilRetirement(2004, "Mejra"));
+const age1 = calcAge(years[2]);
+console.log(age1);

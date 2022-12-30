@@ -123,29 +123,46 @@
 // console.log(age1);
 
 // 40 array methods
-const taylor = ['Marjorie', 'Peace', 'Dont blame me', 'My tears ricochet'];
+// const taylor = ['Marjorie', 'Peace', 'Dont blame me', 'My tears ricochet'];
 
 
-// ADDING ELEMENTS
-const newLength = taylor.push('Dorothea'); // Push is for adding element to the end of the list
+// // ADDING ELEMENTS
+// const newLength = taylor.push('Dorothea'); // Push is for adding element to the end of the list
 
-console.log(taylor)
-console.log(newLength)
+// console.log(taylor)
+// console.log(newLength)
 
-taylor.unshift("Invisible String"); // Unshift adds an element to the start of the list
-console.log(taylor);
+// taylor.unshift("Invisible String"); // Unshift adds an element to the start of the list
+// console.log(taylor);
 
-// REMOVING ELEMENTS
-taylor.pop(); // pop removes last element
-console.log(taylor);
+// // REMOVING ELEMENTS
+// taylor.pop(); // pop removes last element
+// console.log(taylor);
 
-taylor.shift(); // Removes the first element
-console.log(taylor)
+// taylor.shift(); // Removes the first element
+// console.log(taylor)
 
-console.log(taylor.indexOf('Peace'));
+// console.log(taylor.indexOf('Peace'));
 
-console.log(taylor.includes("Dont blame me"));
-console.log(taylor.includes("Karma"))
+// console.log(taylor.includes("Dont blame me"));
+// console.log(taylor.includes("Karma"))
 
 
+// 42 introduction to objects
 
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2022 - 1991,
+    'teacher',
+    ['Michael', 'Peter']
+]
+
+// difference between arrays and objects is that we can actually a sign a name to an element with objects, whereas with arrays we cannot.
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2022 - 1991,
+    friends:  ['Michael', 'Peter']
+
+} // jonas has 5 properties

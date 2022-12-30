@@ -95,29 +95,57 @@
 // const song2 = 'Venus Fly Trap';
 // const song3 = 'Power & Control';
 
-const songs = ["Man's World", "Venus Fly Trap", "Power & Control"]
+// const songs = ["Man's World", "Venus Fly Trap", "Power & Control"]
 
-console.log(songs)
+// console.log(songs)
 
 // const years = new Array(1989, 1999, 2000, 2004)
 
-console.log(songs[0]);
-console.log(songs.length);
-console.log(songs[songs.length - 1])
+// console.log(songs[0]);
+// console.log(songs.length);
+// console.log(songs[songs.length - 1])
 
-songs[2] = "Lies" // replace the last element with a new one
-console.log(songs)
+// songs[2] = "Lies" // replace the last element with a new one
+// console.log(songs)
 
-const firstName = "taylor";
-const taylor = [firstName, 'Swift', 2022 - 1989, 'singer', songs];
+// const firstName = "taylor";
+// const taylor = [firstName, 'Swift', 2022 - 1989, 'singer', songs];
+// console.log(taylor)
+
+// // Exercise
+// const calcAge = function(birthYear) {
+//     return 2022 - birthYear;
+// }
+
+// const years = [1991, 1989, 2000, 2004]
+
+// const age1 = calcAge(years[2]);
+// console.log(age1);
+
+// 40 array methods
+const taylor = ['Marjorie', 'Peace', 'Dont blame me', 'My tears ricochet'];
+
+
+// ADDING ELEMENTS
+const newLength = taylor.push('Dorothea'); // Push is for adding element to the end of the list
+
+console.log(taylor)
+console.log(newLength)
+
+taylor.unshift("Invisible String"); // Unshift adds an element to the start of the list
+console.log(taylor);
+
+// REMOVING ELEMENTS
+taylor.pop(); // pop removes last element
+console.log(taylor);
+
+taylor.shift(); // Removes the first element
 console.log(taylor)
 
-// Exercise
-const calcAge = function(birthYear) {
-    return 2022 - birthYear;
-}
+console.log(taylor.indexOf('Peace'));
 
-const years = [1991, 1989, 2000, 2004]
+console.log(taylor.includes("Dont blame me"));
+console.log(taylor.includes("Karma"))
 
-const age1 = calcAge(years[2]);
-console.log(age1);
+
+

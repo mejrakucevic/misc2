@@ -150,19 +150,52 @@
 
 // 42 introduction to objects
 
-const jonasArray = [
-    'Jonas',
-    'Schmedtmann',
-    2022 - 1991,
-    'teacher',
-    ['Michael', 'Peter']
-]
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2022 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter']
+// ]
 
-// difference between arrays and objects is that we can actually a sign a name to an element with objects, whereas with arrays we cannot.
+// // difference between arrays and objects is that we can actually a sign a name to an element with objects, whereas with arrays we cannot.
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2022 - 1991,
+//     friends:  ['Michael', 'Peter']
+
+ // jonas has 5 properties
+
+// 43 object properties
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
     age: 2022 - 1991,
     friends:  ['Michael', 'Peter']
 
-} // jonas has 5 properties
+} 
+
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+// const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends')
+
+
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn]);
+// } else {
+//     console.log("Wrong request bestie!")
+// }
+
+jonas.location = "Portugal";
+jonas["twitter"] = '@jonassch'
+console.log(jonas);
+
+// Jonas has 3 friends, and his best friend is called Michael
+
+console.log(jonas.firstName + " has " + jonas.friends.length + " friends, and his best friend is called " + [jonas.friends[0]] );

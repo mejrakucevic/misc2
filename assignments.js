@@ -29,6 +29,6 @@ const myCountry = {
     country : 'Serbia',
     capital : 'Belgrade',
     language : 'Serbian',
-    population : 6,
+    population : 6.6,
     neighbours : ['Hungary', 'Romania', 'Bulgaria', 'Macedonia', 'Albania', 'Montenegro', 'Bosnia N Hercegovina', 'Croatia']
 }

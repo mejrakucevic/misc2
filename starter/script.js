@@ -168,34 +168,60 @@
  // jonas has 5 properties
 
 // 43 object properties
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    age: 2022 - 1991,
-    friends:  ['Michael', 'Peter']
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2022 - 1991,
+//     friends:  ['Michael', 'Peter']
 
-} 
+// } 
 
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
 
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
 
-// const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends')
+// // const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends')
 
 
-// if (jonas[interestedIn]) {
-//     console.log(jonas[interestedIn]);
-// } else {
-//     console.log("Wrong request bestie!")
-// }
+// // if (jonas[interestedIn]) {
+// //     console.log(jonas[interestedIn]);
+// // } else {
+// //     console.log("Wrong request bestie!")
+// // }
 
-jonas.location = "Portugal";
-jonas["twitter"] = '@jonassch'
-console.log(jonas);
+// jonas.location = "Portugal";
+// jonas["twitter"] = '@jonassch'
+// console.log(jonas);
 
-// Jonas has 3 friends, and his best friend is called Michael
+// // Jonas has 3 friends, and his best friend is called Michael
 
-console.log(jonas.firstName + " has " + jonas.friends.length + " friends, and his best friend is called " + [jonas.friends[0]] );
+// console.log(jonas.firstName + " has " + jonas.friends.length + " friends, and his best friend is called " + [jonas.friends[0]] );
+
+// 44 Object methods (method is a function inside of an object)
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2022 - 1991,
+//     friends:  ['Michael', 'Peter'],
+//     hasDriversLicense: true,
+
+//     challenge: function() {
+//         if (jonas.hasDriversLicense) {
+//             console.log(`${this.firstName} is a ${this.age} year old teacher, and he has a driver's license.`)
+//         } else console.log("Jonas no license")
+//     }
+// };
+
+// console.log(jonas.challenge());
+
+
+// 46 for
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} `)
+}

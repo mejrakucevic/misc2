@@ -105,21 +105,53 @@
 // 4. Bonus: Create an array 'total' containing the total values, so the bill + tip
 // Test data: 125, 555 and 44
 
-let tip = '';
-function tipCalc(bill) {
-    if (bill >= 50 && bill <= 300) {
-        tip = 0.15 * bill; 
-        console.log(`The tip for a bill worth ${bill}, is ${tip}, and the total is ${bill + tip} `)
-    } else {
-        tip = 0.2 * bill;
-        console.log(`The tip for a bill worth ${bill}, is ${tip}, and the total is ${bill + tip}`)
+// let tip = '';
+// function tipCalc(bill) {
+//     if (bill >= 50 && bill <= 300) {
+//         tip = 0.15 * bill; 
+//         console.log(`The tip for a bill worth ${bill}, is ${tip}, and the total is ${bill + tip} `)
+//     } else {
+//         tip = 0.2 * bill;
+//         console.log(`The tip for a bill worth ${bill}, is ${tip}, and the total is ${bill + tip}`)
+//     }
+// }
+
+// console.log(tipCalc(17));
+
+// let bills = [125, 505, 44]
+// let tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
+// let totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills, tips, totals);
+
+
+const mark = {
+    firstName: "Mark",
+    lastName: "Miller",
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function() {
+        bmi = this.mass / this.height ** 2;
+        console.log(`Marks BMI is ${bmi}`)
     }
 }
 
-console.log(tipCalc(17));
+const john = {
+    firstName: "John",
+    lastName: "Smith",
+    mass: 92,
+    height: 1.95,
 
-let bills = [125, 505, 44]
-let tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
-let totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+    calcBMI: function() {
+        bmi = this.mass / this.height ** 2;
+        console.log(`John's BMI is ${bmi}`)
+    }
+}
 
-console.log(bills, tips, totals);
+function compareBMI(johnbmi, markbmi){
+if (johnbmi > markbmi) {
+    console.log("John's BMI is higher!")
+} else console.log("Mark's BMI is higher!") }
+
+console.log(compareBMI(john.calcBMI, mark.calcBMI));

@@ -151,7 +151,7 @@ const john = {
 
 function compareBMI(johnbmi, markbmi){
 if (johnbmi > markbmi) {
-    console.log("John's BMI is higher!")
-} else console.log("Mark's BMI is higher!") }
+    console.log("John's BMI is higher.")
+} else console.log("Mark's BMI is higher.") }
 
 console.log(compareBMI(john.calcBMI, mark.calcBMI));

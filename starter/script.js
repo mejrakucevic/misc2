@@ -19,16 +19,13 @@
 //     console.log(apples, oranges);
 //     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
 //     return juice
-// } 
+// }
 
 // const orangeJuice = fruitProcessor(4, 12)
 // const appleJuice = fruitProcessor(10, 0);
 // const appleOrangeJuice = fruitProcessor(6, 6);
 
 // console.log(appleJuice);
-
-
-
 
 // 35. Arrow functions
 
@@ -53,7 +50,6 @@
 
 // // 36 Functions calling other functions
 
-
 // function fruitCutter(fruit) {
 //     return fruit * 4;
 // }
@@ -64,7 +60,7 @@
 //     console.log(apples, oranges);
 //     const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} oranges pieces.`;
 //     return juice
-// } 
+// }
 
 // console.log(fruitProcessor(2, 3));
 
@@ -125,7 +121,6 @@
 // 40 array methods
 // const taylor = ['Marjorie', 'Peace', 'Dont blame me', 'My tears ricochet'];
 
-
 // // ADDING ELEMENTS
 // const newLength = taylor.push('Dorothea'); // Push is for adding element to the end of the list
 
@@ -147,7 +142,6 @@
 // console.log(taylor.includes("Dont blame me"));
 // console.log(taylor.includes("Karma"))
 
-
 // 42 introduction to objects
 
 // const jonasArray = [
@@ -165,7 +159,7 @@
 //     age: 2022 - 1991,
 //     friends:  ['Michael', 'Peter']
 
- // jonas has 5 properties
+// jonas has 5 properties
 
 // 43 object properties
 // const jonas = {
@@ -174,7 +168,7 @@
 //     age: 2022 - 1991,
 //     friends:  ['Michael', 'Peter']
 
-// } 
+// }
 
 // console.log(jonas.lastName);
 // console.log(jonas['lastName']);
@@ -184,7 +178,6 @@
 // console.log(jonas['last' + nameKey]);
 
 // // const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends')
-
 
 // // if (jonas[interestedIn]) {
 // //     console.log(jonas[interestedIn]);
@@ -286,12 +279,10 @@
 //     }
 // }
 
-
 // 49 WHILE loops
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`Lifting weights repetition ${rep} `)
 // };
-
 
 // let rep = 1;
 // while (rep<=10) {
@@ -299,10 +290,70 @@
 //     rep++;
 // }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-while (dice !== 6) {
-    console.log(`You rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log("loop is about to end...")
-}
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log('loop is about to end...');
+// }
+// if (x === 3) console.log(23);
+
+// PROBLEM :
+// We work for a company building a smart home thermometer.
+// Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude.
+// Keep in mind that sometimes there might be a sensor error."
+
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+// 1) Understanding the problem
+// - What is temp amplitude? Answer: difference between
+// highest and lowest temperature
+
+// 2) Breaking up into sup-problems
+
+// find the highest temp
+// find the lowest temp
+// subtract the lowest temp from the highest temp
+
+const calcTempAmplitude = function (temps) {
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i <= temps.length; i++) {
+    const CurTemp = temps[i];
+    if (typeof CurTemp !== 'number') continue;
+
+    if (CurTemp > max) max = CurTemp;
+    if (CurTemp < min) min = CurTemp;
+  }
+  console.log(max, min);
+};
+
+calcTempAmplitude([3, 7, 4]);
+
+const amplitude = console.log(temperatures);
+console.log(amplitude);
+
+// Problem 2: function should now receive 2 arrays of temps
+
+const calcTempAmplitudeNew = function (a1, a2) {
+  const temps = a1.concat(a2);
+
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i <= temps.length; i++) {
+    const CurTemp = temps[i];
+    if (typeof CurTemp !== 'number') continue;
+
+    if (CurTemp > max) max = CurTemp;
+    if (CurTemp < min) min = CurTemp;
+  }
+  console.log(max, min);
+};
+
+calcTempAmplitude([3, 7, 4]);
+
+const amplitudeNew = calcTempAmplitudeNew([3, 4, 5], [2, 4, 7]);
+console.log(amplitude);

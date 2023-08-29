@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+}
+.navbar {
+    
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(231, 231, 231);
+}
+
+li {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+
+li a {
+    font-size: 15px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black; #pozadina ce da bude neka slika, mozda piramide, a 3 putovanja ce da budu grey-black blokovi
+}
+
+.navdiv img {
+    width: 100px;
+    height: auto;
+    padding: 15px;
+}

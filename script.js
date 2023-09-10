@@ -373,23 +373,46 @@
 //   console.log(flight.split(';'));
 // }
 
-const bookings = [];
+// const bookings = [];
 
-const createBooking = function(flightNum, numPassengers = 1, price = 199) {
+// const createBooking = function(flightNum, numPassengers = 1, price = 199) {
 
-  // numPassengers = numPassengers  || 1;
-  // price = price  || 199;
+//   // numPassengers = numPassengers  || 1;
+//   // price = price  || 199;
 
-  const booking = {
-    flightNum, 
-    numPassengers,
-    price
-  }
-  console.log(booking);
-  bookings.push(booking);
+//   const booking = {
+//     flightNum, 
+//     numPassengers,
+//     price
+//   }
+//   console.log(booking);
+//   bookings.push(booking);
+// }
+
+// createBooking('LH123');
+// createBooking('LH123', 6, 880);
+
+// createBooking('LH123', undefined, 1999);
+
+const flight = 'LH123';
+const mejra = {
+  name: 'Mejra Kucevic',
+  passport: 2454645645
 }
 
-createBooking('LH123');
-createBooking('LH123', 6, 880);
+const checkIn = function(flightNum, passenger) {
+   flightNum = 'LH999';
+   passenger.name = 'Mrs.' + passenger.name;
 
-createBooking('LH123', undefined, 1999);
+   if(passenger.passport === 2454645645) {
+    alert('Check in')
+
+   } else {
+    alert('Wrong passport!')
+   }
+};
+
+
+checkIn(flight, mejra);
+console.log(flight);
+console.log(mejra);

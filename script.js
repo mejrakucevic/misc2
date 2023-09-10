@@ -391,3 +391,5 @@ const createBooking = function(flightNum, numPassengers = 1, price = 199) {
 
 createBooking('LH123');
 createBooking('LH123', 6, 880);
+
+createBooking('LH123', undefined, 1999);

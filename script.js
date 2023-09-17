@@ -417,15 +417,24 @@
 // console.log(flight);
 // console.log(mejra);
 
-const oneWord = function(str) {
-  return str.replace(/ /g, '').toLowerCase();
-}
+// const oneWord = function(str) {
+//   return str.replace(/ /g, '').toLowerCase();
+// }
 
-const upperFirstWord = function(str) {
-  const [first, ...others]= str.split(' ');
-  return [first.toUpperCase(), ...others].join(' ');
-};
+// const upperFirstWord = function(str) {
+//   const [first, ...others]= str.split(' ');
+//   return [first.toUpperCase(), ...others].join(' ');
+// };
 
-const transformer = function(str, fn) {
+// const transformer = function(str, fn) {
+//   console.log('Transformed string ${fn(str)}');
   
+// }
+
+// transformer('Javascript is the best!', upperFirstWord);
+
+const high5 = function() {
+  console.log('High five');
 }
+
+document.body.addEventListener('click', high5); 

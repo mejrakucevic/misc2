@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(121, 78, 250);
+    font-size: 5vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.enterTemp {
+    margin: 50px;
+}
+
+.enter {
+    margin-top: 280px;
+    margin-left: -1050px;
+}
+
+button {
+    margin-left: 700px;
+}

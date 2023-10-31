@@ -1,30 +1,63 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
+@font-face {
+    font-family: "CombackHomeRegular";
+    src: url("CombackHomeRegular-jEMd9.ttf");
+  }
+
+  @font-face {
+    font-family: "The Amazing Spider-man";
+    src: url("The\ Amazing\ Spider-Man.ttf");
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(121, 78, 250);
-    font-size: 5vh;
-}
+    background-color: black;
+    background-image: url(./pic1.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: -100px;
+    color: white;
+    font-family: "CombackHomeRegular";
+
+  }
 
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: -65%;
+    margin-bottom: 30px;
+  }
+
+  .header {
+    font-size: 80px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(224, 15, 15, 0.5);
+
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
+  }
+  .tab {
+    color: red;
+    padding: 10px 80px;
     margin: 10px;
-    
-}
+    font-size: 70px;
+    cursor: pointer;
+    border: 2px solid red;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .tab:hover {
+    background-color: red;
+    color: whitesmoke;
+    transform: scale(1.1);
+  }
 
-.enterTemp {
-    margin: 50px;
-}
 
-.enter {
-    margin-top: 280px;
-    margin-left: -1050px;
-}
-
-button {
-    margin-left: 700px;
-}

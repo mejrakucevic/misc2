@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<title>Black and Red Menu</title>
+
 </head>
 <body>
-  
   <div class="container">
-   <label class="enterTemp">Enter a temperature: </label> <br>
-   <input type="text" id="textBox"> <br>
+      <div class="header">
+          Monica's Web
+      </div>
+      <div class="menu">
+          <div class="tab" id="tab1">Info</div>
+          <div class="tab">About</div>
+          <div class="tab">End</div>
+      </div>
+      <div class="popup" id="popup1">
+          <div class="popup-text">
+              brah.
+          </div>
+      </div>
+  </div>
 
-   <div class="enter">
-   <label>convert to :</label><br>
-   <input type="radio" name="unit" id="cButton" class="radio">
-   <label >Celsius</label><br>
-   <input type="radio" name="unit" id="fButton" class="radio" >
-   <label >Fahrenheit</label><br> </div>
-
-
-   <button type="button" id="submitBtn">Submit</button> <br>
-  <label id="tempLabel"></label></div>
-
-  <script src="./script.js"></script>
+  <script>
+      const tabs = document.querySelectorAll('.tab');
+      const popup = document.getElementById('popup1');
+      tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+              if (tab.id === 'tab1') {
+                  if (popup.style.display === 'none') {
+                      popup.style.display = 'flex';
+                  } else {
+                      popup.style.display = 'none';
+                  }
+              }
+          });
+      });
+  </script>
 </body>
 </html>
